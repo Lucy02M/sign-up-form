@@ -143,4 +143,13 @@ input{
 
 input:focus{
     border: 2px solid aquamarine;
+    outline: none;
+}
+
+input:valid{
+    border: 2px solid rgb(96, 231, 148);
+}
+
+input:invalid{
+    border: 2px solid rgb(231, 96, 96);
 }
