@@ -107,6 +107,7 @@ input{
     margin: 5px 0;
     width: 50%;
     height: 25px;
+    border: none;
 }
 
 #btn{
@@ -150,6 +151,6 @@ input:valid{
     border: 2px solid rgb(96, 231, 148);
 }
 
-input:invalid{
+input:focus:invalid{
     border: 2px solid rgb(231, 96, 96);
 }
