@@ -68,6 +68,7 @@ a{
     z-index: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 50px;
 }
 
@@ -109,5 +110,5 @@ input{
     left: 170px;
 }
 .body{
-    max-width: 50vw;
+    max-width: 40vw;
 }
