@@ -60,6 +60,18 @@ a{
     color: aliceblue;
 }
 
+a:hover{
+    color: rgb(0, 174, 255);
+}
+
+a:active{
+    color:black;
+}
+
+a:visited{
+    color: gray;
+}
+
 #main{
     border-radius: 2px;
     width: 65vw;
@@ -95,14 +107,28 @@ input{
     margin: 5px 0;
     width: 50%;
     height: 25px;
-
 }
 
 #btn{
     padding: 10px 0;
     width: 150px;
     margin: 40px 0;
-    height: 35px;
+    height: 40px;
+    background-color: rgb(105, 194, 221);
+    border-radius: 5px;
+    border: 0;
+    color: rgb(38, 47, 54);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#btn:hover{
+    background-color: rgb(184, 216, 226);
+    cursor: pointer;
+}
+
+#btn:active{
+    background-color: rgb(75, 113, 124);
 }
 
 .login{
@@ -112,4 +138,9 @@ input{
 }
 .body{
     max-width: 40vw;
+}
+
+
+input:focus{
+    border-color: aquamarine;
 }
