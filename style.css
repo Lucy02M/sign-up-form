@@ -108,3 +108,6 @@ input{
     top: -80px;
     left: 170px;
 }
+.body{
+    max-width: 50vw;
+}
