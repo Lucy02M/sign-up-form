@@ -26,21 +26,24 @@
         </div>
         <div class="form-div">
             <h2>Lets do this!</h2>
-            <form action="#" form="1" method="get">
-                <label for="fname">FIRST NAME</label>
-                <input type="text" id="fname" name="fname" required>
-                <label for="lname">LAST NAME</label>
-                <input type="text" required>
-                <label for="email">EMAIL</label>
-                <input type="email"required>
-                <label for="number">PHONE NUMBER</label>
-                <input type="text"required>
-                <label for="password">PASSWORD</label>
-                <input type="password"required>
-                <label for="cpassword">CONFIRM PASSWORD</label>
-                <input type="password" required>
-            </form>
-            <button type="submit" value="submit" id="btn" form="1">Create Account</button>
+            <form id="survey-form">
+                <label id="fname-label">First Name</label>
+                 <input class="inp" placeholder=" Enter your name" type="text" id="fname" required></input>
+                 <label id="lname-label">Last Name</label>
+                 <input class="inp" placeholder=" Enter your last name" type="text" id="fname" required></input>
+                <label id="email-label">Email</label>
+                 <input class="inp" placeholder=" Enter your email" type="email" id="email" required></input>
+                <label class="inp" id="number-label">Phone Number</label>
+                 <input class="inp" placeholder="Enter your number" type="text" id="number" minlength="10" maxlength="10" required></input>
+                <label id="pass-label">Password</label>
+                 <input type="password" class="inp" placeholder="Enter your password" id="password" required></input>
+                <label id="cpass-label">Confirm Password</label>
+                 <input type="password" class="inp" placeholder="Enter your password" id="cpassword" required></input>
+            
+          
+                <div class="info"><button class="cien" type="submit" id="submit">Submit</button></div>
+          
+              </form>
             <p class="login">Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>
