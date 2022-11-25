@@ -38,15 +38,15 @@
                  <input class="inp" placeholder=" Enter your email" type="email" id="email" required></input></div>
                  <div class="input">
                 <label class="inp" id="number-label">Phone Number</label>
-                 <input class="inp" placeholder="Enter your number" type="text" id="number" minlength="10" maxlength="10" required></input></div>
+                 <input class="inp" placeholder="Enter your number" type="text" id="number" pattern="[0-9]{10}" required></input></div>
                  <div class="input">
                 <label id="pass-label">Password</label>
-                 <input type="password" class="inp" placeholder="Enter your password" id="password" required></input></div>
+                 <input type="password" class="inp" placeholder="Enter your password" id="password" minlength="8" maxlength="15" required></input></div>
                  <div class="input">
                 <label id="cpass-label">Confirm Password</label>
-                 <input type="password" class="inp" placeholder="Enter your password" id="cpassword" required></input></div>
+                 <input type="password" class="inp" placeholder="Enter your password" id="cpassword" minlength="8" maxlength="15" onkeyup="validate_password()" required></input>
+                 <span id="wrong_pass_alert"></span></div>
             
-          
                 <button class="btn" type="submit" id="submit">Submit</button>
           
               </form>
@@ -55,4 +55,25 @@
       </div>
     </div>
 </body>
+<script>
+    function validate_password() {
+
+        var pass = document.getElementById('password').value;
+        var confirm_pass = document.getElementById('cpassword').value;
+        if (pass != confirm_pass) {
+            document.getElementById('wrong_pass_alert').style.color = 'red';
+            document.getElementById('wrong_pass_alert').innerHTML
+              = 'Password not matched';
+            document.getElementById('submit').disabled = true;
+            document.getElementById('submit').style.opacity = (0.4);
+        } else {
+            document.getElementById('wrong_pass_alert').style.color = 'green';
+            document.getElementById('wrong_pass_alert').innerHTML =
+                'Password Matched';
+            document.getElementById('submit').disabled = false;
+            document.getElementById('submit').style.opacity = (1);
+        }
+    }
+
+</script>
 </html>
